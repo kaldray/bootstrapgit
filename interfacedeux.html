@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <title>Hello, world!</title>
+    <style>
+      h2 {
+        color: skyblue;
+      }
+
+      p {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-weight: lighter;
+      }
+
+      div.container {
+        margin-top: 20px;
+        border: 3px solid green;
+      }
+      div.row {
+        border: 2px solid red;
+      }
+
+      .row_nav {
+        height: 400px;
+      }
+
+      .row_footer {
+        height: 150px;
+        background-color: lightseagreen;
+      }
+
+      div {
+        border: 1px solid grey;
+        padding: 10px;
+      }
+      .row_3 {
+        height: 200px;
+        background-color: tomato;
+      }
+      .row_4 {
+        background-color: whitesmoke;
+        height: 200px;
+      }
+
+      .row_5 {
+        margin-right: 50px;
+        margin-bottom: 50px;
+      }
+
+      .row_nav p,
+      .row_nav h1 {
+        text-align: center;
+      }
+      .offset-3 col-2_marge {
+        margin-right: 50px;
+        height: 200px;
+      }
+      .marge {
+        margin-right: 50px;
+        margin-bottom: 50px;
+      }
+      .row_footer h1 {
+        text-align: center;
+      }
+
+      #tel {
+        border-radius: 50%;
+      }
+      #img {
+        background-image: url(images/banner.jpg);
+      }
+      .nav-tabs .nav-item.show .nav-link,
+      .nav-tabs .nav-link.active {
+        color: #ffffff;
+        background-color: rgb(235, 95, 95);
+        border-color: #dee2e6 #dee2e6 #fff;
+      }
+      .nav-tabs .nav-link {
+        border: 1px solid transparent;
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
+        background-color: rgb(235, 95, 95);
+      }
+      a {
+        color: #ffffff;
+        text-decoration: none;
+        background-color: transparent;
+        -webkit-text-decoration-skip: objects;
+      }
+      .btn-primary {
+        color: #fff;
+        background-color: rgb(235, 95, 95);
+        border-color: rgb(235, 95, 95);
+      }
+      .btn-primary:hover {
+        color: #fff;
+        background-color: rgb(240, 36, 36);
+        border-color: rgb(240, 36, 36);
+      }
+      div {
+        border: none;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="row">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+        </ul>
+      </div>
+      <div class="row">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="d-block w-100"
+                src="images/banner.jpg"
+                alt="First slide"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="images/banner.jpg"
+                alt="Second slide"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="images/banner.jpg"
+                alt="Third slide"
+              />
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <div class="row" id="img">
+        <div class="offset-xl-4 col-xl-4 row_nav">
+          <h1>Ipsum sed lorem</h1>
+          <p>
+            Morbi in sem quis dui placerat ornare. Pellentesque odio nisi,
+            euismod sed arcu cras consecuat lorem ipsum dolor sit amet.
+          </p>
+          <button class="offset-5 col-2">start</button>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-xl-3 offset-md-1 col-md-6 text-center">
+          <h2>Magna ultricies</h2>
+          <p>
+            Morbi in sem quis dui plalorem ipsum euismod in, pharetra sed
+            ultricies.
+          </p>
+          <h2>Ipsum adipiscing lorem</h2>
+          <p>
+            Tristique yonve cursus jam nulla quam loreipsu gravida adipiscing
+            lorem
+          </p>
+        </div>
+        <div class="col-xl-3 col-md-6 text-center">
+          <img src="images/pic01.jpg" id="tel" alt="" />
+        </div>
+        <div class="col-xl-3 col-md-6 text-center">
+          <h2>Tempus nullam</h2>
+          <p>
+            Sed adipiscing ornare risus. Morbi estes blandit sit et amet,
+            sagittis magna.
+          </p>
+          <h2>Suscipit nibh dolore</h2>
+          <p>
+            Pellentesque egestas sem. Suspendisse modo ullamcorper feugiat
+            lorem.
+          </p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="w-100 row_3 text-center">
+          <h1>Feugiat lorem</h1>
+          <p>
+            Morbi in sem quis dui placerat ornare. Pellentesque odio nisi,
+            euismod in, pharetra magna etiam lorem ultricies in diam. Sed arcu
+            cras consequat."
+          </p>
+          <cite id="cite">Jane Anderson CEO, Untitled</cite>
+        </div>
+      </div>
+      <div class="row justify-space-between">
+        <div class="col-xl-3 col-md-6 row_5 offset-xl-1 text-center">
+          <img src="images/pic05.jpg" height="200px" alt="" />
+          <h2>Consequat</h2>
+          <p>
+            Placerat ornare. Pellentesque od sed euismod in, pharetra ltricies
+            edarcu cas consequat.
+          </p>
+        </div>
+        <div class="col-xl-3 row_5 col-md-6 text-center">
+          <img src="images/pic04.jpg" alt="" />
+          <h2>Adipiscing</h2>
+          <p>
+            Morbi in sem quis dui placerat Pellentesque odio nisi, euismod
+            pharetra lorem ipsum.
+          </p>
+        </div>
+        <div class="col-xl-3 col-md-6 text-center">
+          <img src="images/pic03.jpg" alt="" />
+          <h2>Malesuada</h2>
+          <p>
+            Nam dui mi, tincidunt quis, accu an porttitor, facilisis luctus que
+            metus vulputate sem magna.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-8 offset-2">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputEmail4"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPassword4">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="inputPassword4"
+                  placeholder="Password"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Address</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputAddress"
+                placeholder="1234 Main St"
+              />
+            </div>
+            <div class="form-group">
+              <label for="inputAddress2">Address 2</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputAddress2"
+                placeholder="Apartment, studio, or floor"
+              />
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity" />
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="gridCheck"
+                />
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 row_footer"><h1>Get In touch</h1></div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

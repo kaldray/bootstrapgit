@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://127.0.0.1:5500/html/index.html# -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+  <link rel="stylesheet" href="./Document_files/style.css"></head>
+  <body>
+    <header>
+      <div id="recherche">
+        <input type="search" name="search" id="search">
+      </div>
+      <div id="logo">
+        <div id="texte">
+          <img src="./Document_files/logo.png" alt="">
+        </div>
+      </div>
+      <nav>
+        <div id="nav">
+          <ul>
+            <li href="#">Recherche</li>
+            <li href="#">A propos</li>
+            <li href="#">Postuler</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="formulaire">
+          <form action="http://127.0.0.1:5500/html/post">
+            <legend>Envoyer nous votre candidature</legend>
+            <hr>
+            <input type="text" placeholder="nom">
+            <input type="text" placeholder="prénom">
+            <input type="mail" placeholder="mail">
+            <input type="number" placeholder="téléphone">
+            <label for="radio" class="un">Votre expérience:</label>
+            <label for="radio" class="un">debutant</label>
+            <input type="radio" name="radio" id="debutant" class="un">
+            <label for="radio" class="un">confirme</label>
+            <input type="radio" name="radio" id="confirme" class="un">
+            <label for="texte" class="jojo">Langage maitrisé :</label>
+            <label for="checkbox" class="jojo">Javascript</label>
+            <input type="checkbox" name="Javascript">
+            <label for="checkbox" class="jojo">Java</label>
+            <input type="checkbox" name="Java">
+            <label for="checkbox" class="jojo">PHP</label>
+            <input type="checkbox" name="PHP">
+            <label for="checkbox" class="jojo">Python</label>
+            <input type="checkbox" name="Python">
+            <input type="button" value="Valider votre envoie candidature">
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

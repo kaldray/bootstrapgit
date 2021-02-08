@@ -1,0 +1,143 @@
+hr {
+  border: 1px solid black;
+  background-color: black;
+  width: 500px;
+  margin-left: 15%;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #0d1472;
+  width: 100%;
+  height: 100px;
+}
+
+nav {
+  position: absolute;
+  right: 0%;
+  top: 27%;
+}
+
+#nav {
+  width: 300px;
+}
+#nav ul {
+  display: flex;
+}
+#nav li {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+}
+
+#recherche {
+  position: absolute;
+  top: 30%;
+}
+
+#logo {
+  position: absolute;
+  top: 0%;
+  left: 40%;
+}
+
+#texte {
+  position: relative;
+  top: 35%;
+}
+
+main {
+  background-color: #202ab8;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+form {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.formulaire input[type="text"],
+.formulaire input[type="mail"],
+.formulaire input[type="number"],
+.formulaire select {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  display: inline-block;
+  width: 35%;
+  padding: 7px;
+  border-bottom: 1px solid blanchedalmond;
+  background: white;
+  margin-left: 25px;
+  height: 30px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-right: 35px;
+}
+
+.formulaire input[type="radio"],
+.formulaire select {
+  color: white;
+}
+
+.formulaire input[type="checkbox"],
+.formulaire select {
+  color: white;
+  display: flex;
+  order: 3;
+}
+
+.formulaire input[type="button"],
+.formulaire select {
+  display: block;
+  width: 80%;
+  background-color: #eb3d3d;
+  margin-left: 50px;
+}
+
+.formulaire {
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=#663234, Direction=134, Strength=15);
+  width: 700px;
+  margin: auto;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  background: #353538;
+  border-radius: 1%;
+  grid-row: 2;
+  grid-column: 5;
+}
+
+label {
+  color: white;
+  margin-left: 25px;
+}
+
+.jojo {
+  display: flex;
+  order: 3;
+}
+.un {
+  display: flex;
+  order: 1;
+}
+
+#rien {
+  display: inline;
+}
+
+legend {
+  margin: 10px;
+}
